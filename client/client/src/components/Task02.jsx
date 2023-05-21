@@ -17,7 +17,7 @@ function Task02() {
       .catch(error => {
         setError(error.message);
       });
-  },[]);
+  });
 
   const postMessage = () => {
     axios.post('http://localhost:8080/insert', { Id: ID, Title: message })
